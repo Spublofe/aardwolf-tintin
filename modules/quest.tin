@@ -14,6 +14,9 @@
 		$repchan @Y[@RQuest Requested@Y]@w: @YTarget@w=@R$GMCP[COMM][QUEST][targ]@w. @YRoom@w=@R$GMCP[COMM][QUEST][room]@w. @YArea@w=@R$GMCP[COMM][QUEST][area]@w.;
 		#var quest_timer {<fca>ACTIVE<099>};
 		#format {quest[start]} {%T};
+		#var TARGET {@R$GMCP[COMM][QUEST][targ]@w}
+		#var ROOM_NAME {@R$GMCP[COMM][QUEST][room]@w}
+		#var TARGET {@R$GMCP[COMM][QUEST][area]@w}
 	};
 	#elseif {"$GMCP[COMM][QUEST][action]" == "fail"}
 	{	
