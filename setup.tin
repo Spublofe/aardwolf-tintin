@@ -5,7 +5,7 @@
 #VARIABLE {logdir} {$dir/log}
 #VARIABLE {mapdir} {$dir/map}
 #VARIABLE {modulesdir} {$dir/modules}
-
+#map flag nofollow on
 #READ {$modulesdir/gmcp.tin};
 
 #SESSION {aard} {aardmud.org} {4000};
@@ -17,6 +17,9 @@
 #READ {$modulesdir/map.tin}
 #READ {$modulesdir/ticking.tin}
 #READ {$modulesdir/quest.tin}
+#READ {$modulesdir/autohunt.tin}
+#READ {$modulesdir/hunt_trick.tin}
+#READ {$modulesdir/paths.tin}
 
 #MAP READ {$mapdir/map-all.tt}				# Once you have a map file, you will read it in here
 
@@ -25,6 +28,6 @@
 #VARIABLE {mapping} {1}
 #VARIABLE {showmap} {0}
 #VARIABLE {autoscan} {0}
-#VARIABLE {repoptrack} {1}
+#VARIABLE {repoptrack} {0}
 
 #SPLIT 0 4
